@@ -67,7 +67,7 @@ If you want to print the board, you could try something like this
 
 ```
 // Be sure to import "fmt" before using this
-for i := 0; i < 6; i ++ {    // Repeats 6 times, going 0 - 5
+for i := 0; i < 6; i ++ {    // Repeats 6 times, going from 0 to 5
     fmt.Println(Game.Left.Pieces[i], Game.Right.Pieces[5 - i])
 }
 ```
