@@ -1,4 +1,4 @@
-package Mobile
+package Mancala
 
 var Default = 4
 
