@@ -2,6 +2,9 @@
 A library to help put mancala wherever you want it.
 
 ## Usage
+
+### Starting a game
+
 **Before use, be sure to reset the board!**
 
 ```
