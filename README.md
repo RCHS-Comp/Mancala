@@ -31,6 +31,13 @@ Game.Right.Points  // Has the right's points
 Game.Left.Points   // Has the left's points
 ```
 
+If you need to check if a side is empty, grab it from the side
+
+```
+Game.Right.IsEmpty()    // Will either return a True or False is the side is empty
+Game.Left.IsEmpty()     // Same thing
+```
+
 ### Pieces
 
 The pieces are represented as an array with the length of 6
