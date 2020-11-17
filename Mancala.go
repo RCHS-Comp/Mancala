@@ -13,6 +13,10 @@ type Board struct {
     Right Side
 }
 
+func (Current *Side) IsEmpty() (bool) {
+    return (Current.Pieces == [6]int{0, 0, 0, 0, 0, 0})
+}
+
 func (Current *Board) Reset() {
     // Dude, I love this song playing
     // Jazz is just so good
