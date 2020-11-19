@@ -1,6 +1,6 @@
 package Mancala
 
-var Default = 4
+const Default = 4
 
 type Side struct {
     Pieces [6]int
