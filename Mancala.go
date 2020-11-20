@@ -49,9 +49,9 @@ func (Current *Board) Move(Position int) {
         return
     }
 
-    let ModifySide *[6]int
-    let Opposite *[6]int
-    let Points *int
+    var ModifySide *[6]int
+    var Opposite *[6]int
+    var Points *int
 
     if Current.Side {
         ModifySide = &Current.Right.Pieces
