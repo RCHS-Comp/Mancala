@@ -13,7 +13,7 @@ type Board struct {
     Right Side
 }
 
-func (Current *Side) IsEmpty() (bool) {
+func (Current Side) IsEmpty() (bool) {
     return (Current.Pieces == [6]int{0, 0, 0, 0, 0, 0})
 }
 
