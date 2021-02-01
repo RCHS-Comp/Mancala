@@ -13,6 +13,7 @@ type Board struct {
     Side bool   // True = right
     Left Side
     Right Side
+    Mode bool   // True = avalanche
 }
 
 func (Current Side) IsEmpty() (bool) {
@@ -33,6 +34,11 @@ func (Current *Board) Reset() {
     Current.Right.Points = 0
     Current.Side = false
 }
+
+func (Current *Board) EndMove() {   // Make this easier because why not?
+    Current.Side = !(Current.Side)  // If we need to steal be sure to invert first
+}
+
 
 func (Current *Board) Move(Position int) {
     if (Position < 1 || Position > 6) {
@@ -111,5 +117,5 @@ func (Current *Board) Move(Position int) {
         }
     }
 
-    Current.Side = !(Current.Side)
+    EndMove()
 }
