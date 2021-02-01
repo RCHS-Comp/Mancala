@@ -1,4 +1,6 @@
 package Mancala
+// Todo: add different modes & better errors
+// Maybe clean things up?
 
 const Default = 4
 
